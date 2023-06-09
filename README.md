@@ -48,3 +48,7 @@ By the end of this project each group/student should be able to:
 
 
 When the project is completed, commit the final changes, sync all pull requests, and each member should submit their respective GitHub links(though the code in each should be the same)
+
+## Authors
+- Syed Hussain Ather
+- Jeremy Kenney
