@@ -56,11 +56,15 @@ class Garage(object):
     def leave_garage(self):
         ticket_number = int(input("Enter your ticket number:"))
         if ticket_number in self.current_ticket:
-            if self.current_ticket[ticket_number]["paid"]:
+            if self.current_ticket[ticket_number]["paid"] == True:
                 self.parkingSpaces -= 1
+                del self.current_ticket[ticket_number]
+                print("Thank you, have a nice day!")
                 # Get rid of the ticket from the dictionary.
-        if current_ticket[ticket_number]["paid"] == False:
+        if self.current_ticket[ticket_number]["paid"] == False:
             input("Please give your payment")
-        current_ticket["paid"] = True
-        print("Thank You, have a nice day!")
-        self.parkingSpaces += 1
+        # elif self.current_ticket["paid"] = True:
+            print("Thank You, have a nice day!")
+            self.parkingSpaces += 1
+
+
